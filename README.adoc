@@ -1,0 +1,4 @@
+= Hugo-Asciidoctor-PlantUML
+
+This repository contains a Dockerfile and Gemfile.lock for building a docker image that contains Hugo v0.74.0 with support for Asciidoctor & PlantUML.
+
