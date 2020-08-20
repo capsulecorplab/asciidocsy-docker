@@ -1,17 +1,11 @@
 FROM ubuntu:latest
 
-ENV TZ America/Chicago
-ENV DEBIAN_FRONTEND noninteractive
-
 # Install build requirements
 RUN apt update && apt upgrade -y && \
     apt install -y \
     autoconf \
     bison \
     build-essential \
-    curl \
-    default-jdk \
-    git \
     libssl-dev \
     libyaml-dev \
     libreadline6-dev \
@@ -20,26 +14,9 @@ RUN apt update && apt upgrade -y && \
     libffi-dev \
     libgdbm6 \
     libgdbm-dev \
+    curl \
     wget \
-    graphviz
-
-# Install go
-RUN wget https://golang.org/dl/go1.14.4.linux-amd64.tar.gz && \
-    tar -C /usr/local -xzf go1.14.4.linux-amd64.tar.gz && \
-    rm -rf /var/lib/apt/lists/*
-ENV PATH /usr/local/go/bin:$PATH
-
-# Install hugo
-RUN git clone https://github.com/gohugoio/hugo.git && \
-    cd hugo && \
-    git checkout v0.74.0 && \
-    CGO_ENABLED=1 go install --tags extended
-ENV HUGO_PATH /root/go/bin
-ENV PATH $HUGO_PATH:$PATH
-
-# Install Node.js and npm
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
-    apt install --no-install-recommends -y nodejs
+    git
 
 # Install Ruby Gems needed for asciidoctor
 ENV RBENV_ROOT $HOME/.rbenv
