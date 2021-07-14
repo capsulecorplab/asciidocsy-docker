@@ -10,6 +10,7 @@ gem "asciidoctor", "~> 2.0"
 gem "asciidoctor-diagram", "~> 2.0"
 gem "asciidoctor-pdf", "~> 1.5"
 gem "asciidoctor-html5s", "~> 0.5.0"
+gem "asciidoctor-revealjs", "~> 4.1"
 
 gem "jekyll", "~> 4.2"
 group :jekyll_plugins do

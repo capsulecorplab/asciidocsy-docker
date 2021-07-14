@@ -29,6 +29,10 @@ GEM
       thread_safe (~> 0.3.0)
       treetop (~> 1.6.0)
       ttfunk (~> 1.5.0, >= 1.5.1)
+    asciidoctor-revealjs (4.1.0)
+      asciidoctor (>= 2.0.0, < 3.0.0)
+      concurrent-ruby (~> 1.0)
+      thread_safe (~> 0.3.5)
     colorator (1.1.0)
     concurrent-ruby (1.1.6)
     css_parser (1.7.1)
@@ -143,6 +147,7 @@ DEPENDENCIES
   asciidoctor-diagram (~> 2.0)
   asciidoctor-html5s (~> 0.5.0)
   asciidoctor-pdf (~> 1.5)
+  asciidoctor-revealjs (~> 4.1)
   jekyll (~> 4.2)
   jekyll-algolia
   jekyll-asciidoc
