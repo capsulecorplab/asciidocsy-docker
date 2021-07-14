@@ -9,3 +9,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "asciidoctor", "~> 2.0"
 gem "asciidoctor-diagram", "~> 2.0"
 gem "asciidoctor-pdf", "~> 1.5"
+
+gem "jekyll", "~> 4.2"
