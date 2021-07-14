@@ -82,6 +82,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
+    liquidoc (0.9.5)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -145,6 +146,7 @@ DEPENDENCIES
   jekyll (~> 4.2)
   jekyll-algolia
   jekyll-asciidoc
+  liquidoc (~> 0.9.5)
 
 BUNDLED WITH
    2.2.4
