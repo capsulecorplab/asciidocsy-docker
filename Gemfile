@@ -16,6 +16,7 @@ gem "jekyll", "~> 4.2"
 group :jekyll_plugins do
   gem 'jekyll-asciidoc'
   gem 'jekyll-algolia'
+  gem 'jekyll-liquify'
 end
 
 gem "liquidoc", "~> 0.9.5"
