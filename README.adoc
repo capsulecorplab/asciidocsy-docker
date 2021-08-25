@@ -1,4 +1,4 @@
-= Asciidoctor-Extended
+= Asciidocsy-Docker
 
-This repository contains a Dockerfile and Gemfile.lock for building a docker image that contains Asciidoctor with Extensions, such as asciidoctor-diagram & asciidoctor-pdf
+Dockerfile for running the https://asciidocsy.netlify.app/[Asciidocsy] theme with Jekyll & NodeJS, including extensions, s.a., https://docs.asciidoctor.org/diagram-extension/latest/[asciidoctor-diagram], https://asciidoctor.org/docs/asciidoctor-pdf/[asciidoctor-pdf], and https://docs.asciidoctor.org/reveal.js-converter/latest/[asciidoctor-revealjs].
 
